@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="vContent/shortcut-icon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mohammed Salah's Portfolio</title>
+</head>
+
+<body>
+    <header class="profContainer">
+        <i class="ri-moon-line change-theme" id="themeButton"></i>
+
+        <div class="profileContainer grid">
+            <div class="profileData">
+                <div class="profileBorder">
+                    <div class="profilePerfil">
+                        <img src="vContent/enhanced-prof.jpg" alt="">
+                    </div>
+                </div>
+
+                <h2 class="profileName">Mohammed Melok</h2>
+                <h3 class="profileProfession">Web developer</h3>
+
+                <ul class="profileSocial">
+
+                    <a href="https://www.linkedin.com/in/mohammedmelok2001/" target="_blank" class="profileSocialLink">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/MSMelok" target="_blank" class="profileSocialLink">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <!--
+            <div class="profileInfo grid">
+                <div class="profileInfoGroup">
+                    <h3 class="profileInfoNumber">2</h3>
+                    <p class="profileInfoDescription">
+                        Years of <br> work
+                    </p>
+                </div>
+                <div class="profileInfoGroup">
+                    <h3 class="profileInfoNumber">+80</h3>
+                    <p class="profileInfoDescription">
+                        Completed <br> projects
+                    </p>
+                </div>
+                <div class="profileInfoGroup">
+                    <h3 class="profileInfoNumber">96</h3>
+                    <p class="profileInfoDescription">Satisfied <br> customers</p>
+                </div>
+            </div>-->
+
+            <div class="profileButtons">
+                <a download="vContent/IMAG0027.jpg" target="_blank" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+
+                <div class="profileButtonsSmall">
+                    <a href="https://api.whatsapp.com/send?phone=+201022723804&text=Hello, How are you Mohammed?"
+                        target="_blank" class="button buttonSmall buttonGray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filtersContainer">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filtersContent">
+                <button class="filtersButton filterTabActive" data-target="#projects">
+                    Certificates
+                </button>
+                <!-- <button class="filtersButton" data-target="#skills">
+                    Skills
+                </button> -->
+            </ul>
+
+            <div class="filtersSections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projectsContent grid filtersActive" data-content id="projects">
+                    <article class="projectsCard">
+
+                        <img src="vContent/cer-1.svg" alt="" class="projectsImg">
+
+                        <div class="projectsModal">
+                            <div>
+                                <span class="projectsSubtitle">
+                                    Coursera - Google
+                                    <br>
+                                    Grade Achieved: 98.75%
+                                </span>
+                                <h3 class="projectsTitle">Technical Support Fundamentals</h3>
+                                <a href="https://www.coursera.org/account/accomplishments/certificate/VRLVFG3EY9LB"
+                                    class="projectsButton button buttonSmall">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projectsCard">
+                        <img src="vContent/cer-2.svg" alt="" class="projectsImg">
+
+                        <div class="projectsModal">
+                            <div>
+                                <span class="projectsSubtitle">
+                                    Coursera - University of Michigan
+                                    <br>
+                                    Grade Achieved: 98.34%
+                                </span>
+                                <h3 class="projectsTitle">Getting Started with Python</h3>
+                                <a href="
+https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" class="projectsButton button buttonSmall">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projectsCard">
+                        <img src="vContent/Server-bro.svg" alt="" class="projectsImg">
+
+                        <div class="projectsModal">
+                            <div>
+                                <span class="projectsSubtitle">
+                                    Coursera - Google
+                                    <br>
+                                    Grade Achieved: 94.50%
+                                </span>
+                                <h3 class="projectsTitle">The Bits and Bytes of Computer Networking</h3>
+                                <a href="
+https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" class="projectsButton button buttonSmall">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projectsCard">
+                        <img src="vContent/Spreadsheets-bro.svg" alt="" class="projectsImg">
+
+                        <div class="projectsModal">
+                            <div>
+                                <span class="projectsSubtitle">
+                                    Coursera - Coursera Project Network
+                                    <br>
+                                    Grade Achieved: 100%
+                                </span>
+                                <h3 class="projectsTitle">Introduction to Microsoft Excel</h3>
+                                <a href="
+https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class="projectsButton button buttonSmall">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--=============== SKILLS ===============-->
+                    <!-- <div class="skillsContent grid" data-content id="skills">
+                        <div class="skillsArea">
+                            <h3 class="skillsTitle">Frontend Developingr</h3>
+
+                            <div class="skillsBox">
+                                <div class="skillsGroup">
+                                    <div class="skillsData">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skillsName">HTML</h3>
+                                            <span class="skillsLevel">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skillsData">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skillsName">CSS</h3>
+                                            <span class="skillsLevel">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skillsData">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skillsName">JavaScript</h3>
+                                            <span class="skillsLevel">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skillsGroup">
+
+                                    <div class="skillsData">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skillsName">Responsive Design</h3>
+                                            <span class="skillsLevel">Intermediate</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="skillsArea">
+                            <h3 class="skillsTitle">Backend Developing</h3>
+
+                            <div class="skillsBox">
+                                <div class="skillsGroup">
+                                    <div class="skillsData">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skillsName">PHP</h3>
+                                            <span class="skillsLevel">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skillsGroup">
+                                        <div class="skillsData">
+                                            <i class="ri-checkbox-circle-line"></i>
+
+                                            <div>
+                                                <h3 class="skillsName">Python</h3>
+                                                <span class="skillsLevel">Basic</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footerContainer">
+        <span class="footerCopy">
+            &#169; MohammedMelok. All rigths reserved
+        </span>
+    </footer>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+</body>
+
+</html>
