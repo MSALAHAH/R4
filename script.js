@@ -25,7 +25,7 @@ const iconTheme = 'ri-sun-line';
 
 // Previously selected theme (if user selected)
 const selectedTheme = localStorage.getItem('selectedTheme');
-const selectedIcon = localStorage.getItem('selected-icon');
+const selectedIcon = localStorage.getItem('selectedIcon');
 
 // Function to get the current theme
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
@@ -33,8 +33,14 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 // Apply the previously selected theme
 if (selectedTheme) {
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    document.body.classList[selectedTheme === 'light' ? 'remove' : 'add'](darkTheme);  // Change here
     themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
+} else {
+    // Set the default theme to dark if no theme is selected
+    document.body.classList.add(darkTheme);
+    themeButton.classList.add(iconTheme);
+    localStorage.setItem('selectedTheme', 'dark');  // Save the default theme choice
+    localStorage.setItem('selectedIcon', 'ri-moon-line');  // Save the default icon choice
 }
 
 // Toggle theme manually with the button
@@ -43,7 +49,7 @@ themeButton.addEventListener('click', () => {
     themeButton.classList.toggle(iconTheme);
     // Save the theme and current icon choice
     localStorage.setItem('selectedTheme', getCurrentTheme());
-    localStorage.setItem('selectedTcon', getCurrentIcon());
+    localStorage.setItem('selectedIcon', getCurrentIcon());
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
