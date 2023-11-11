@@ -51,28 +51,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selectedTheme', getCurrentTheme());
     localStorage.setItem('selectedIcon', getCurrentIcon());
 });
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-});
-
-// Define elements to reveal with ScrollReveal
-const elementsToReveal = [
-    '.profileBorder',
-    '.profileName',
-    '.profileProfession',
-    '.profileSocial',
-    '.profileInfo-group',
-    '.profileButtons',
-    '.filtersContent',
-    '.filters',
-];
-
-// Apply ScrollReveal to each element
-elementsToReveal.forEach((element, index) => {
-    sr.reveal(element, { delay: 500 + index * 100 });
-});
