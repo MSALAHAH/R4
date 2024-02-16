@@ -4,8 +4,11 @@ const tabContents = document.querySelectorAll('[data-content]');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
+        console.log('Tab clicked:', tab);
+        
         const target = document.querySelector(tab.dataset.target);
-
+        console.log('Target content:', target);
+        
         tabContents.forEach(tc => {
             tc.classList.remove('filtersActive');
         });
@@ -17,6 +20,7 @@ tabs.forEach(tab => {
         tab.classList.add('filterTabActive');
     });
 });
+
 
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('themeButton');
