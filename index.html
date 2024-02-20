@@ -57,17 +57,17 @@
             </div>-->
 
             <div class="profileButtons">
-                <a download="vContent/IMAG0027.jpg" target="_blank" class="button">
+                <a href="./vContent/MuhammadSalahAhmed's_CV_FEBURARY_2024.pdf" download="MuhammadSalahAhmed_CV_FEBURARY_2024.pdf" class="button">
                     Download CV <i class="ri-download-line"></i>
                 </a>
-
+            
                 <div class="profileButtonsSmall">
-                    <a href="https://api.whatsapp.com/send?phone=+201022723804&text=Hello, How are you Mohammed?"
-                        target="_blank" class="button buttonSmall buttonGray">
+                    <a href="https://api.whatsapp.com/send?phone=+201022723804&text=Hello, How are you Mohammed?" target="_blank" class="button buttonSmall buttonGray">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </div>
             </div>
+            
         </div>
     </header>
 
@@ -76,10 +76,10 @@
         <section class="filtersContainer">
             <!--=============== FILTERS TABS ===============-->
             <ul class="filtersContent">
-                <button class="filtersButton filterTabActive" data-target="#projects">
+                <button class="filtersButton filterTabActive" data-target="#projects" onclick="showTab('#projects')">
                     Certificates
                 </button>
-                <button class="filtersButton" data-target="#skills">
+                <button class="filtersButton" data-target="#skills" onclick="showTab('#skills')">
                     Skills
                 </button>
             </ul>
@@ -87,6 +87,29 @@
             <div class="filtersSections">
                 <!--=============== PROJECTS ===============-->
                 <div class="projectsContent grid filtersActive" data-content id="projects">
+                    
+                    <article class="projectsCard">
+
+                        <img src="vContent/Fingerprint-bro.svg" alt="" class="projectsImg">
+
+                        <div class="projectsModal">
+                            <div>
+                                <span class="projectsSubtitle">
+                                    Coursera - Google
+                                    <br>
+                                    Grade Achieved: 98.75%
+                                    <br>
+                                    Certificate Credential ID: FZ2UNZJYCZCC
+                                </span>
+                                <h3 class="projectsTitle">Foundations of Cybersecurity</h3>
+                                <a href="https://www.coursera.org/account/accomplishments/records/FZ2UNZJYCZCC"
+                                    class="projectsButton button buttonSmall">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
                     <article class="projectsCard">
 
                         <img src="vContent/cer-1.svg" alt="" class="projectsImg">
@@ -97,6 +120,8 @@
                                     Coursera - Google
                                     <br>
                                     Grade Achieved: 98.75%
+                                    <br>
+                                    Certificate Credential ID: VRLVFG3EY9LB
                                 </span>
                                 <h3 class="projectsTitle">Technical Support Fundamentals</h3>
                                 <a href="https://www.coursera.org/account/accomplishments/certificate/VRLVFG3EY9LB"
@@ -116,10 +141,12 @@
                                     Coursera - University of Michigan
                                     <br>
                                     Grade Achieved: 98.34%
+                                    <br>
+                                    Certificate Credential ID: TW9GKDPR2S3Z
                                 </span>
                                 <h3 class="projectsTitle">Getting Started with Python</h3>
                                 <a href="
-https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" class="projectsButton button buttonSmall">
+                                    https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" class="projectsButton button buttonSmall">
                                     <i class="ri-link"></i>
                                 </a>
                             </div>
@@ -135,10 +162,12 @@ https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z" class
                                     Coursera - Google
                                     <br>
                                     Grade Achieved: 94.50%
+                                    <br>
+                                    Certificate Credential ID: XT4CH9JRT6BV
                                 </span>
                                 <h3 class="projectsTitle">The Bits and Bytes of Computer Networking</h3>
                                 <a href="
-https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" class="projectsButton button buttonSmall">
+                                    https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" class="projectsButton button buttonSmall">
                                     <i class="ri-link"></i>
                                 </a>
                             </div>
@@ -154,10 +183,12 @@ https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV" class
                                     Coursera - Coursera Project Network
                                     <br>
                                     Grade Achieved: 100%
+                                    <br>
+                                    Certificate Credential ID: 22MW4P93UPP4
                                 </span>
                                 <h3 class="projectsTitle">Introduction to Microsoft Excel</h3>
                                 <a href="
-https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class="projectsButton button buttonSmall">
+                                    https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class="projectsButton button buttonSmall">
                                     <i class="ri-link"></i>
                                 </a>
                             </div>
@@ -165,7 +196,7 @@ https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class
                     </article>
 
                     <!--=============== SKILLS ===============-->
-                    <div class="skillsContent grid" data-content id="skills">
+                    <!-- <div class="skillsContent grid" data-content id="skills">
                         <div class="skillsArea">
                             <h3 class="skillsTitle">Frontend Developingr</h3>
 
@@ -243,9 +274,9 @@ https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4" class
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-        </section>
+        </section> 
     </main>
 
     <!--=============== FOOTER ===============-->
